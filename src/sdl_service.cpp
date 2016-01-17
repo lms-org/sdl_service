@@ -9,6 +9,8 @@ bool SdlService::init() {
         return false;
     }
 
+    logger.info() << "Initialized SDL2";
+
     return true;
 }
 

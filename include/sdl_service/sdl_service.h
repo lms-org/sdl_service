@@ -2,8 +2,6 @@
 #define SDL_SERVICE_H
 
 #include <SDL2/SDL.h>
-#include <string>
-#include <map>
 #include <lms/service.h>
 
 namespace sdl_service {
