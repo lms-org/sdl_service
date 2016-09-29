@@ -18,5 +18,5 @@ if((${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang") OR (${CMAKE_CXX_COMPILER_ID} STRE
 endif()
 
 include_directories(include)
-add_library(sdl_service SHARED ${SOURCES} ${HEADERS})
-target_link_libraries(sdl_service PRIVATE ${CONAN_LIBS})
+add_library(lms_sdl_service SHARED ${SOURCES} ${HEADERS})
+target_link_libraries(lms_sdl_service PRIVATE ${CONAN_LIBS})

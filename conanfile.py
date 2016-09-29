@@ -20,4 +20,5 @@ class SdlServiceConan(ConanFile):
         self.copy("*.so", dst="lib")
 
     def package_info(self):
-        self.cpp_info.libs = ["lms_sdl_serivce"]
+        self.cpp_info.libs = ["lms_sdl_service"]
+        self.copy("*.so",dst="bin")
