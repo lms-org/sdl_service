@@ -5,7 +5,7 @@ class SdlServiceConan(ConanFile):
     version = "1.0"
     settings = "os", "compiler", "build_type", "arch"
     exports = "src/*","include/*","CMakeLists.txt","README.md"
-    requires = "SDL2_image/2.0.1@lasote/stable","lms/2.0@lms/stable"
+    requires = "SDL2/2.0.4@lasote/stable","lms/2.0@lms/stable"
     generators = "cmake"
 
     def build(self):
