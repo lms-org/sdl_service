@@ -24,5 +24,5 @@ add_library(lms_sdl_service SHARED ${SOURCES} ${HEADERS})
 if(USE_CONAN)
 target_link_libraries(lms_sdl_service PRIVATE ${CONAN_LIBS})
 else()
-target_link_libraries(lms_sdl_service PRIVATE lmscore SDL2)
+target_link_libraries(lms_sdl_service PRIVATE lmscore SDL2 ${CONAN_LIBS}) #TODO used to sed sdl lib on mac
 endif(USE_CONAN)
